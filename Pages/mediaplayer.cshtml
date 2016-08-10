@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link href="~/Styles/StyleSheet.css" rel="stylesheet" />
+        <script type="text/javascript" language="JavaScript">
+<!--
+function goBack() {
+    window.history.back()
+}
+//-->
+        </script>
+        <title>Mediaplayer</title>
+    </head>
+    <body>
+        <div>
+            @Video.MediaPlayer(
+        path: "../media/orderhelp.avi",
+        width: "700",
+        height: "800",
+        autoStart: true,
+        playCount: 2,
+        uiMode: "full",
+        stretchToFit: true,
+        enableContextMenu: true,
+        mute: false,
+        volume: 75)
+        </div>
+
+        <div>
+            <a href="../Pages/Help.aspx" class="Mediabutton">Return</a>
+           
+        </div>
+            
+    </body>
+</html>
